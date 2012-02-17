@@ -8,7 +8,7 @@ module OmniAuth
       option :name, 'tumblr2'
       option :client_options, {:site => 'http://www.tumblr.com'}
 
-      uid { user['name'] }
+      uid { raw_info['name'] }
 
       info do
         {
