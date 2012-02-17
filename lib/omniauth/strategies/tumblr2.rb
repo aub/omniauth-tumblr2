@@ -5,7 +5,7 @@ module OmniAuth
   module Strategies
     class Tumblr2 < OmniAuth::Strategies::OAuth
 
-      option :name, 'tumblr2'
+      option :name, 'tumblr'
       option :client_options, {:site => 'http://www.tumblr.com'}
 
       uid { raw_info['name'] }
